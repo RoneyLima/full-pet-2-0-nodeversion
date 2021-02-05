@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.header {
+    display: block;
+    position: relative;
+}
+
+body {
+    padding-top: 170px;
+    }
+
+.login-options {
+    display: inline-block ;
+}
+
+.body-conteiner {
+    position: absolute;
+    left: 50%;
+    color: dimgray;
+    transform: translate(-50%);
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    max-width: 1080px;
+}
+
+.body-background {
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../imagens/fundodepatas.png);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    position: fixed;
+    
+}
+
+.coluna-categoria{
+    flex: 20em;
+    max-width: 18%;
+    text-align: left;
+    display: block;
+    height: 100%;
+    width: 250px;
+    
+}
+
+.coluna-produtos {
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin-left: 2%;
+    padding: 1ex;
+    
+}
+
+.produtos-linha  {
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.card {
+    align-items: center;
+}
+
+.card img {
+    width: 120px;
+    
+}
+.card a {
+    text-decoration: none;
+    text-shadow: 2px;
+    color: dimgray;
+}
+
+.card .valor-antigo {
+    text-decoration: line-through;
+    font-size: 10pt;
+}
+
+.card .valor-atual {
+    font-size: 14pt;
+    font-weight: 500;
+}
+
+
+.conteudo-lojas {
+   
+    margin-left: auto;
+    margin-right: auto;
+    float: right;
+}
+
+.conteudo-lojas h2 {
+    text-align: center;
+    font-size: 12pt;
+}
+
+
+
+
+
+/* Estilo do texto nos produtos*/
+
+#description    {
+    font-size: 11pt ;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: slategrey;
+    
+}
+
+#precoAntigo    {
+    text-decoration: line-through;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+    text-align: center;
+    color: darkgray;
+}
+
+#precoAtual {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 12pt;
+    text-align: center;
+    color: dimgray;
+}

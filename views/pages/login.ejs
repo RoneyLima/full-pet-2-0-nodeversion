@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <%- include('../partials/head'); %>
+  
+</head>
+<body>
+
+  <%- include('../partials/navbar'); %>
+
+<div class="container container-fluid">
+        <form class="form-cadastro bg-white mt-5" method="POST" action="./php/actions/logar.php">
+          <h2>Login</h2>
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input class="form-control" type="email" name="email" id="email">
+          </div><!-- form-group -->
+
+          <div class="form-group">
+            <label for="senha">Senha</label>
+            <input class="form-control" type="password" name="senha" id="senha" required>
+          </div><!-- form-group -->
+
+          <button type="submit" class="btn btn-secondary text-white" name="logar">Login</button>
+          <a href="cadastro.php" class="btn btn-secondary text-white">Cadastrar</a>
+        </form>
+      </div><!-- container-conteudo -->
+  
+</body>
+
+<footer>
+  <%- include('../partials/footer'); %>
+</footer>
+</html>

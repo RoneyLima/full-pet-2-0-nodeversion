@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <%- include('../partials/head'); %>
+
+</head>
+<body>
+
+    <%- include('../partials/navbar'); %>
+
+    <div class="container body-conteiner div-pagina-produtos">
+    
+        <div class="coluna-produtos">        
+        
+            <% for(i = 0; i < dados.length; i++ ) { %>
+            <div class="container">                
+            
+                <div class="card" style="width: 16rem;">
+                <br>
+                <img class="card-img-top" src="./imagens/Produtos/<%= dados[i].img_nome %>" alt="imagem_produto" onmouseover="destaqueImg(this)"  onmouseout="semDestaque(this)" >
+                    <div class="card-body">
+                    <p class="card-text"> <%= dados[i].descricao %> </p>
+                    <hr>
+                    <h5 class="card-title">R$<%= dados[i].valor_atual %> </h5>
+                    <p class="card-text"> R$<%= dados[i].valor_antigo %> </p>              
+                    <a href="/detalhes" class="detalhes btn text-white">Detalhes</a>                    
+                    </div>                   
+                </div>
+            </div>
+            <% } %>
+        </div>                
+    </div>
+
+    
+</body>
+
+<footer>
+    <%- include('../partials/footer'); %>
+</footer>
+</html>
